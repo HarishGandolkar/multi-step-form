@@ -1,0 +1,224 @@
+/******************************************************************************************************************/
+/* Select Plans */
+/******************************************************************************************************************/
+
+/*************************************/
+/* Plan Cards */
+/*************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.plans{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 3rem;
+    margin-top: 2.4rem;
+    margin-bottom: 4rem;
+    
+}
+
+.arcade{
+    background-image: url(../images/icon-arcade.svg);
+    background-repeat: no-repeat;
+    height:4rem;
+    width: 4rem;
+}
+
+.plan-text{
+    padding-top: 5rem;
+    color:hsl(213, 96%, 18%);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+
+.plan-price{
+    font-size:1.6rem;
+    color: hsl(231, 11%, 63%);
+    margin-top: 1rem;
+}
+
+.element{
+    border: 1px solid hsl(231, 11%, 63%);
+    width: 14rem;
+    height: 17rem;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.advanced{
+    background-image: url(../images/icon-advanced.svg);
+    background-repeat: no-repeat;
+    height: 4rem;
+    width: 4rem;
+   
+}
+
+.pro{
+    background-image: url(../images/icon-pro.svg);
+    background-repeat: no-repeat;
+    height: 4rem;
+    width: 4rem;
+}
+
+.month-year-switch{
+    background-color: hsl(217, 100%, 97%);
+    width: 48rem;
+    height: 6rem;
+    position: absolute;
+    top:41rem;
+    border-radius: 1.2rem;
+}
+
+.grid--1--cols--4--rows{
+    grid-template-rows: auto auto auto 1fr;
+}
+
+/***************************************************/
+/* toggle switch */
+/***************************************************/
+
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 5rem;
+    height: 2.4rem;
+    left: 21rem;
+    top:1.8rem
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(213, 96%, 18%);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.6rem;
+    width: 1.6rem;
+    left: 0.4rem;
+    bottom: 0.4rem;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: hsl(213, 96%, 18%);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(2.6rem);
+    -ms-transform: translateX(2.6rem);
+    transform: translateX(2.6rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 3.4rem;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*********************************/
+
+.month{
+    position: absolute;
+    left:13rem;
+    top:2rem;
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: hsl(213, 96%, 18%);
+    font-weight: 600;
+}
+
+.year{
+    position: absolute;
+    left: 29rem;
+    top: 2rem;
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: hsl(231, 11%, 63%);
+    font-weight: 600;
+}
+
+.button--link{
+    position: absolute;
+    top: 52rem;
+}
+
+.link-to-previous-page{
+    font-size: 1.5rem;
+    color:hsl(231, 11%, 63%)!important;
+    font-weight: 600;
+    font-family: inherit;
+    margin-right: 30rem;
+}
+
+.link-to-previous-page:hover{
+    color: hsl(213, 96%, 18%) !important;
+}
+
+.btn--2{
+    background-color:hsl(213, 96%, 18%);
+    color: white;
+    border: none;
+    padding: 1.4rem 2.2rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    border-radius: 1.2rem;
+    right: 13rem;
+    cursor: pointer;
+}
+
+.btnform {
+    display:inline-block
+}
+
+#n2{
+    background-color: hsl(206, 94%, 87%);
+    color: black;
+}
+
+#n1{
+    background-color:hsl(243, 100%, 62%);
+    color: white ;
+}
+
+.offer{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: hsl(213, 96%, 18%);
+}
+
+.hidden{
+    display: none;
+}
+

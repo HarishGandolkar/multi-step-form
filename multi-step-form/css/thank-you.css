@@ -1,0 +1,30 @@
+.img{
+    background-image: url(../images/icon-thank-you.svg);
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.thank-you-section{
+    display: inline-block;
+    align-self: center !important;
+    padding-right: 12rem;
+    justify-content: center !important;
+}
+
+.thank-you-text{
+   font-size: 1.6rem;
+   color: hsl(231, 11%, 63%);
+   text-align: center;
+   line-height: 1.6;
+}
+
+.thank-you-heading{
+    font-size: 3rem;
+    color:hsl(213, 96%, 18%);
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+

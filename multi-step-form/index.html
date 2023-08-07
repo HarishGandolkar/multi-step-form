@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+
+
+    <link rel="stylesheet" href="../css/styleInfo.css" type="text/css">
+    <link rel="stylesheet" href="../css/general.css" type="text/css">
+    <link rel="stylesheet" href="../css/queries.css" type="text/css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Inter:wght@400;500;700&family=PT+Serif:ital@1&family=Poppins:ital,wght@1,800&family=Rubik:wght@400;500;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container grid grid--2--cols">
+        <aside class="section-aside">
+        </aside>
+        <div class="nav-selction">
+            <div class="first-element nav-element">
+                <a class="nav-number num1" id="n1">1</a>
+                <ul>
+                    <li class="step">Step 1</li>
+                    <li class="nav-text"><a class="link" id="1" href="yourinfo.html">Your info</a></li>
+                </ul>
+            </div>
+            <div class="second-element nav-element">
+                <a href="selectPlan.html" class="nav-number num2" id="n2">2</a>
+                <ul>
+                    <li class="step">Step 2</li>
+                    <li class="nav-text"><a class="link" id="2" href="selectPlan.html">Select plan</a></li>
+                </ul>
+            </div>
+            <div class="thied-element nav-element">
+                <a href="addons.html" class="nav-number num3" id="n3">3</a>
+                <ul>
+                    <li class="step">Step 3</li>
+                    <li class="nav-text"><a class="link" id="3" href="addons.html">Add-ons</a></li>
+                </ul>
+            </div>
+            <div class="fourth-element nav-element">
+                <a href="summary.html" class="nav-number num4" id="n4">4</a>
+                <ul>
+                    <li class="step">Step 4</li>
+                    <li class="nav-text"><a class="link" id="4" href="summary.html">Summary</a></li>
+                </ul>
+            </div>
+        </div>
+        <main class="section-info grid grid--1--cols">
+            <div class="text">
+                <h1 class="primary-heading">Personal info</h1>
+                <p class="info-text">Please provide your name, email address, and phone number.</p>
+            </div>
+            <div class="userForm">
+                <form class="form" action="/Select-Plans" method="post" id="userForm">
+                    <div class="name-section error-parent">
+                        <div class="label">
+                            <label class="label-text" for="name">Name</label>
+                            <label for="" class="error error-hidden">This field is required</label>
+                        </div>
+                        <input id="name" class="input" type="text" placeholder="e.g. Stephen king" name="fullName">
+                    </div>
+                    <div class="email-section error-parent">
+                        <div class="label">
+                            <label class="label-text" for="email">Email Address</label>
+                            <label for="" class="error error-hidden">This field is required</label>
+                        </div>
+                        <input id="email" class="input" type="email" placeholder="e.g. Stephen@gmail.com" name="email">
+                    </div>
+                    <div class="phone-section error-parent">
+                        <div class="label">
+                            <label class="label-text" for="pNumber">Phone Number</label>
+                            <label for="" class="error error-hidden">This field is required</label>
+                        </div>
+                        <input id="pNumber" class="input" type="tel" placeholder="e.g. +91 XXXXXXXXXX" name="PNumber">
+                    </div>
+                    <div class="mob-background">
+                        <div class="button">
+                            <a class="btn">Next Step</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </section>
+
+    <script src="../js/general.js"></script>
+    <script src="../js/yourinfo.js"></script>
+
+</body>
+</html>

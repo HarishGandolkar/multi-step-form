@@ -1,0 +1,197 @@
+/*
+    # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Marine blue: hsl(213, 96%, 18%)
+- Purplish blue: hsl(243, 100%, 62%)
+- Pastel blue: hsl(228, 100%, 84%)
+- Light blue: hsl(206, 94%, 87%)
+- Strawberry red: hsl(354, 84%, 57%)
+
+### Neutral
+
+- Cool gray: hsl(231, 11%, 63%)
+- Light gray: hsl(229, 24%, 87%)
+- Magnolia: hsl(217, 100%, 97%)
+- Alabaster: hsl(231, 100%, 99%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Ubuntu](https://fonts.google.com/specimen/Ubuntu)
+- Weights: 400, 500, 700
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* 10px / 16px = 0.625*100 = 62.5% ie 1rem = 10px*/
+    font-size: 62.5%;
+}
+
+body{
+    font-family:'Ubuntu', sans-serif;
+    background-color:hsl(217, 100%, 97%);
+}
+
+.container{
+    width:100rem;
+    margin: 8rem auto;
+    background-color: white;
+    border-radius: 1.4rem;
+    position: relative;
+}
+
+
+.grid{
+    display: grid;
+}
+
+
+
+.hide{
+    display: none;
+}
+
+
+/*********************************************/
+/*side bar section*/
+/*********************************************/
+
+ul{
+    list-style: none;
+}
+
+.nav-selction{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 5.2rem;
+}
+
+.nav-element{
+    display: flex;
+    align-items: center;
+    gap:1.6rem;
+    margin-bottom: 2.6rem;
+}
+
+.nav-number{
+    font-size: 1.6rem;
+    color: white;
+    border: 1px solid white;
+    padding: 0.6rem 1.1rem;
+    border-radius: 50%;
+   
+}
+
+.step{
+    color: hsl(229, 24%, 87%);
+    font-size:1.3rem ;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+}
+
+.nav-text{
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+a:link,
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.section-sidebar-mob{
+    display: none;
+}
+
+/*************************************/
+/* Users info */
+/*************************************/
+.section-aside{
+    position: relative;
+    background-image: url(../images/bg-sidebar-desktop.svg);
+    height: 58rem;
+    width: 30rem;
+    background-repeat: no-repeat;
+    margin:1.6rem;
+    top:0.5rem
+ }
+ 
+ .section-info{
+     margin-left: 6.4rem;
+    position: relative;
+ }
+ 
+ .grid--2--cols{
+     grid-template-columns: auto 1fr;
+ }
+
+ /*****************************************/
+/* Button */
+ /*****************************************/
+
+ .btn{
+    background-color:hsl(213, 96%, 18%);
+    color: white;
+    border: none;
+    padding: 1.4rem 2.2rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    border-radius: 1.2rem;
+    margin-top: 3.4rem;
+    position: absolute;
+    right: 13rem;
+    cursor: pointer;
+}
+
+.button{
+    position: relative;
+}
+
+
+/************************************/
+/* Info text section */
+/************************************/
+
+.text{
+    padding: 6.4rem 0 2.4rem;
+}
+
+.primary-heading{
+    font-size: 3.4rem;
+    color:hsl(213, 96%, 18%) ;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.info-text{
+    font-size:1.8rem;
+    color:hsl(231, 11%, 63%);
+}

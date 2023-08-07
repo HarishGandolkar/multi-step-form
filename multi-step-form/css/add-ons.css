@@ -1,0 +1,75 @@
+
+
+#n3{
+    background-color: hsl(206, 94%, 87%);
+    color: black;
+}
+
+#n1{
+    background-color:hsl(243, 100%, 62%);
+    color: white ;
+}
+
+#n2{
+    background-color:hsl(243, 100%, 62%);
+    color: white ;
+}
+
+.add-ons-section{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+
+.subsection{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid hsl(231, 11%, 63%);
+    padding: 1.8rem;
+    width: 44rem;
+    border-radius: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+input.checkbox{
+    width: 2rem;
+    height: 2rem;
+}
+
+.info{
+    margin-left: -12rem;
+}
+
+.title{
+    font-size: 1.5rem;
+    color: hsl(213, 96%, 18%);
+    margin-bottom: 0.4rem;
+}
+
+.about{
+    font-size: 1.4rem;
+    color: hsl(231, 11%, 63%);
+}
+
+.md-info{
+    margin-left: -16rem;
+}
+
+.cost{
+    font-size: 1.4rem;
+    color: hsl(243, 100%, 62%);
+    font-weight: 500;
+}
+
+.active{
+    background-color: hsl(231, 100%, 99%);
+    border:1.5px solid hsl(228, 100%, 84%);
+    transform: translatey(-0.8rem);
+    transition: all 0.3s;
+}
+
+.unactive{
+    transition: all 0.3s;
+}
