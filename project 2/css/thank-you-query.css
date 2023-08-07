@@ -1,0 +1,42 @@
+
+@media(max-width:63em){
+    .img{
+        height:7rem;
+        width:7rem;
+        background-size: cover;
+    }
+    .thank-you-text{
+        font-size: 2rem;
+    }
+}
+
+
+@media(max-width:50em){
+    .img{
+        height:6rem;
+        width:6rem;
+        background-size: cover;
+    }
+    .thank-you-text{
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width:30em){
+    .img{
+        height:6rem;
+        width:6rem;
+        background-size: cover;
+    }
+    .thank-you-text{
+        font-size: 1.9rem;
+        line-height: 1.4;
+    }
+    .thank-you-section{
+        margin-top: 8rem;
+        margin-left: 2rem;
+    }
+    .container{
+        height: 50rem;
+    }
+}
